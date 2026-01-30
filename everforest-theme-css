@@ -1,0 +1,448 @@
+/*
+* Everforest Theme for Thymer
+* Based on Everforest (Dark Medium) + Everforest Light (Medium) palettes provided
+*
+* Key Palette (from the provided Everforest files):
+* - Dark (medium) base: #2D353B (bg0), #232A2E (bg_dim), #D3C6AA (fg),
+*   accents: #A7C080 (green), #7FBBB3 (blue), #83C092 (aqua), #DBBC7F (yellow),
+*   #E69875 (orange), #E67E80 (red), #D699B6 (purple), greys: #7A8478/#859289/#9DA9A0
+* - Light (medium) base: #FDF6E3 (bg0), #EFEBD4 (bg_dim), #5C6A72 (fg),
+*   accents: #8DA101 (green), #3A94C5 (blue), #35A77C (aqua), #DFA000 (yellow),
+*   #F57D26 (orange), #F85552 (red), #DF69BA (purple), greys: #A6B0A0/#939F91/#829181
+*/
+
+/* ------------------------------------------- */
+/* Everforest - Dark (Medium)                  */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-everforest"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Everforest Teal/Blue         */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #A7C080;
+    }
+
+    --text-base-size: 16px;
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Everforest Dark     */
+    /* ------------------------------------------- */
+    --color-bg-50: #56635f;
+    --color-bg-100: #4F585E;
+    --color-bg-150: #475258;
+    --color-bg-200: #3D484D;
+    --color-bg-300: #343F44;
+    --color-bg-400: #2D353B;
+    --color-bg-500: #2D353B;
+    --color-bg-600: #2D353B;
+    --color-bg-700: #232A2E;
+    --color-bg-800: #343F44; /* Sidebar - background light */
+    --color-bg-900: #2D353B;  /* Main window - main background */
+    --color-bg-950: #232A2E;
+    --color-bg-500-50: rgba(45, 53, 59, 0.5);
+    --color-bg-950-50: rgba(35, 42, 46, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Everforest Green       */
+    /* ------------------------------------------- */
+    --color-primary-50: #ccc5a4;
+    --color-primary-100: #c6c49d;
+    --color-primary-200: #bdc395;
+    --color-primary-300: #b4c28d;
+    --color-primary-400: #A7C080; /* Everforest Green */
+    --color-primary-500: #95ab76;
+    --color-primary-600: #82966b;
+    --color-primary-700: #708161;
+    --color-primary-800: #5e6d57;
+    --color-primary-900: #4c584c;
+    --color-primary-950: #3f4a45;
+    --color-primary-400-70: rgba(167, 192, 128, 0.7);
+    --color-primary-950-20: rgba(63, 74, 69, 0.2);
+    --color-primary-text-100: #2D353B;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Everforest Foreground    */
+    /* ------------------------------------------- */
+    --color-text-50: #ffffff;
+    --color-text-100: #D3C6AA;
+    --color-text-200: #9DA9A0;
+    --color-text-300: #D3C6AA;
+    --color-text-400: #D3C6AA;
+    --color-text-500: #9DA9A0;
+    --color-text-600: #859289;
+    --color-text-700: #7FBBB3;
+    --color-text-800: #D3C6AA;
+    --color-text-900: #343F44;
+    --color-text-950: #859289;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Everforest Accents    */
+    /* ------------------------------------------- */
+    --text-ok: #A7C080;
+    --text-status-online: #A7C080;
+    --text-warning: #DBBC7F;
+    --text-error: #E67E80;
+    --bg-alert: #E67E80;
+    --fg-alert: #D3C6AA;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #7FBBB3;
+    --link-hover-color: #83C092;
+    --ed-link-color: #7FBBB3;
+    --ed-link-hover-color: #83C092;
+
+    --ed-hashtag-color: #83C092;
+    --ed-hashtag-bg: rgba(131, 192, 146, 0.15);
+
+    --ed-mention-color: #83C092;
+    --ed-mention-bg: rgba(131, 192, 146, 0.15);
+    --ed-mention-hover-bg: rgba(131, 192, 146, 0.25);
+    --ed-mention-hover-color: #7FBBB3;
+
+    --ed-datetime-color: #E69875;
+    --ed-datetime-bg: rgba(230, 152, 117, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Green              */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #A7C080;
+    --ed-check-div-hover-border: #83C092;
+    --ed-check-done-bg: #A7C080;
+    --ed-check-done-fg: #D3C6AA;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #7A8478 !important;
+        text-decoration-color: #7A8478 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(84, 58, 72, 0.8);
+    --selection-fg: #D3C6AA;
+    --ed-selection-self-bg: rgba(84, 58, 72, 0.8);
+    --ed-selection-blurred-bg: rgba(84, 58, 72, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #A7C080 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #A7C080;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #7FBBB3;
+
+    --ed-container-border-color: rgba(133, 146, 137, 0.25); /* #859289 */
+    --ed-container-bg-color:     rgba(58, 81, 93, 0.08);    /* #3A515D */
+    
+    --ed-code-border:            rgba(58, 81, 93, 0.25);    /* #3A515D */
+    --ed-code-bg:                rgba(133, 146, 137, 0.08); /* #859289 */
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #E69875 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(66, 80, 71, 0.12);
+    --ed-block-note-border: #A7C080;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #2D353B;
+    --cards-hover-bg: #343F44;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #A7C080;
+    --side-fg-active-focus: #2D353B;
+    --sidebar-bg-hover: #3D484D;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #2D353B;
+    --cmdpal-selected-bg-color: #A7C080;
+    --cmdpal-selected-fg-color: #2D353B;
+    --cmdpal-hover-bg-color: #343F44;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #3D484D;
+    --input-border-color: #4F585E;
+    --input-border-focus: 1px solid #A7C080;
+    --input-border-shadow: 0 0 8px rgba(167, 192, 128, 0.4);
+
+    --button-primary-bg-color: #A7C080;
+    --button-primary-fg-color: #2D353B;
+    --button-primary-bg-hover-color: #83C092;
+    --button-bg-color: #343F44;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #3D484D;
+
+    --color-shadow: rgba(35, 42, 46, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(35, 42, 46, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(35, 42, 46, 0.5);
+
+    --logo-color: #A7C080;
+    --logo-glow-shadow:
+        0 0 15px rgba(167, 192, 128, 0.4),
+        0 0 30px rgba(167, 192, 128, 0.2);
+
+    /* Enums - Everforest Dark Palette */
+    --enum-red-bg: rgba(230, 126, 128, 0.25);
+    --enum-red-fg: #E67E80;
+    --enum-orange-bg: rgba(230, 152, 117, 0.25);
+    --enum-orange-fg: #E69875;
+    --enum-yellow-bg: rgba(219, 188, 127, 0.25);
+    --enum-yellow-fg: #DBBC7F;
+    --enum-green-bg: rgba(167, 192, 128, 0.25);
+    --enum-green-fg: #A7C080;
+    --enum-cyan-bg: rgba(131, 192, 146, 0.25);
+    --enum-cyan-fg: #83C092;
+    --enum-blue-bg: rgba(127, 187, 179, 0.25);
+    --enum-blue-fg: #7FBBB3;
+    --enum-purple-bg: rgba(214, 153, 182, 0.25);
+    --enum-purple-fg: #D699B6;
+    --enum-pink-bg: rgba(214, 153, 182, 0.25);
+    --enum-pink-fg: #D699B6;
+
+    --prop-border-focused: #2D353B;
+    --prop-bg-focused: rgba(167, 192, 128, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #A7C080;
+    --ed-drag-handle-hover-border: #83C092;
+
+    --gradient-scrim: none;
+}
+
+/* ------------------------------------------- */
+/* Everforest Light - Clean Light              */
+/* ------------------------------------------- */
+html[data-theme="basic-light-everforest"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Everforest Light Blue        */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #8DA101;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Soft Light          */
+    /* ------------------------------------------- */
+    --color-bg-50: #A6B0A0;
+    --color-bg-100: #E0DCC7;
+    --color-bg-150: #F4F0D9;
+    --color-bg-200: #EFEBD4;
+    --color-bg-300: #FDF6E3;
+    --color-bg-400: #FDF6E3;
+    --color-bg-500: #FDF6E3;
+    --color-bg-600: #FDF6E3;
+    --color-bg-700: #FFFFFF;
+    --color-bg-800: #EFEBD4; /* Sidebar - light */
+    --color-bg-900: #FDF6E3; /* Main window - light */
+    --color-bg-950: #FFFFFF;
+    --color-bg-500-50: rgba(253, 246, 227, 0.5);
+    --color-bg-950-50: rgba(255, 255, 255, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Everforest Light Green  */
+    /* ------------------------------------------- */
+    --color-primary-50: #eef1d9;
+    --color-primary-100: #dde3b3;
+    --color-primary-200: #c6d080;
+    --color-primary-300: #afbd4d;
+    --color-primary-400: #8DA101; /* Everforest Light Green */
+    --color-primary-500: #869912;
+    --color-primary-600: #7e9023;
+    --color-primary-700: #778834;
+    --color-primary-800: #708045;
+    --color-primary-900: #687856;
+    --color-primary-950: #637261;
+    --color-primary-400-70: rgba(141, 161, 1, 0.7);
+    --color-primary-950-20: rgba(99, 114, 97, 0.2);
+    --color-primary-text-100: #FDF6E3;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Everforest Light Ink     */
+    /* ------------------------------------------- */
+    --color-text-50: #111111;
+    --color-text-100: #5C6A72;
+    --color-text-200: #708089;
+    --color-text-300: #829181;
+    --color-text-400: #829181;
+    --color-text-500: #939F91;
+    --color-text-600: #A6B0A0;
+    --color-text-700: #3A94C5;
+    --color-text-800: #5C6A72;
+    --color-text-900: #FDF6E3;
+    --color-text-950: #939F91;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Light Accents         */
+    /* ------------------------------------------- */
+    --text-ok: #8DA101;
+    --text-status-online: #8DA101;
+    --text-warning: #DFA000;
+    --text-error: #F85552;
+    --bg-alert: #E66868;
+    --fg-alert: #FDF6E3;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #3A94C5;
+    --link-hover-color: #35A77C;
+    --ed-link-color: #3A94C5;
+    --ed-link-hover-color: #35A77C;
+
+    --ed-hashtag-color: #35A77C;
+    --ed-hashtag-bg: rgba(53, 167, 124, 0.10);
+
+    --ed-mention-color: #35A77C;
+    --ed-mention-bg: rgba(53, 167, 124, 0.1);
+    --ed-mention-hover-bg: rgba(53, 167, 124, 0.2);
+    --ed-mention-hover-color: #35A77C;
+
+    --ed-datetime-color: #F57D26;
+    --ed-datetime-bg: rgba(245, 125, 38, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Green              */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #8DA101;
+    --ed-check-div-hover-border: #35A77C;
+    --ed-check-done-bg: #8DA101;
+    --ed-check-done-fg: #FDF6E3;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #939F91 !important;
+        text-decoration-color: #939F91 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(234, 237, 200, 0.8);
+    --selection-fg: #5C6A72;
+    --ed-selection-self-bg: rgba(234, 237, 200, 0.8);
+    --ed-selection-blurred-bg: rgba(234, 237, 200, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #8DA101 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #8DA101;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #3A94C5;
+
+    --ed-container-border-color: rgba(224, 220, 199, 0.25); /* #E0DCC7 */
+    --ed-container-bg-color:     rgba(92, 106, 114, 0.08);  /* #5C6A72 */
+    
+    --ed-code-border:            rgba(92, 106, 114, 0.25);  /* #5C6A72 */
+    --ed-code-bg:                rgba(224, 220, 199, 0.08); /* #E0DCC7 */
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #F57D26 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(141, 161, 1, 0.08);
+    --ed-block-note-border: #8DA101;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #FDF6E3;
+    --cards-hover-bg: #EFEBD4;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #8DA101;
+    --side-fg-active-focus: #FDF6E3;
+    --sidebar-bg-hover: #EAEDC8;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #EFEBD4;
+    --cmdpal-selected-bg-color: #8DA101;
+    --cmdpal-selected-fg-color: #FDF6E3;
+    --cmdpal-hover-bg-color: #EAEDC8;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #EFEBD4;
+    --input-border-color: #BDC3AF;
+    --input-border-focus: 1px solid #8DA101;
+    --input-border-shadow: 0 0 8px rgba(141, 161, 1, 0.3);
+
+    --button-primary-bg-color: #8DA101;
+    --button-primary-fg-color: #FDF6E3;
+    --button-primary-bg-hover-color: #35A77C;
+    --button-bg-color: #F4F0D9;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #E0DCC7;
+
+    --color-shadow: rgba(0, 0, 0, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+    --logo-color: #8DA101;
+    --logo-glow-shadow:
+        0 0 15px rgba(141, 161, 1, 0.3),
+        0 0 30px rgba(141, 161, 1, 0.2);
+
+    /* Enums - Everforest Light Palette */
+    --enum-red-bg: rgba(248, 85, 82, 0.15);
+    --enum-red-fg: #F85552;
+    --enum-orange-bg: rgba(245, 125, 38, 0.15);
+    --enum-orange-fg: #F57D26;
+    --enum-yellow-bg: rgba(223, 160, 0, 0.15);
+    --enum-yellow-fg: #DFA000;
+    --enum-green-bg: rgba(141, 161, 1, 0.15);
+    --enum-green-fg: #8DA101;
+    --enum-cyan-bg: rgba(53, 167, 124, 0.15);
+    --enum-cyan-fg: #35A77C;
+    --enum-blue-bg: rgba(58, 148, 197, 0.15);
+    --enum-blue-fg: #3A94C5;
+    --enum-purple-bg: rgba(223, 105, 186, 0.15);
+    --enum-purple-fg: #DF69BA;
+    --enum-pink-bg: rgba(223, 105, 186, 0.15);
+    --enum-pink-fg: #DF69BA;
+
+    --prop-border-focused: #FDF6E3;
+    --prop-bg-focused: rgba(141, 161, 1, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #8DA101;
+    --ed-drag-handle-hover-border: #35A77C;
+
+    --gradient-scrim: none;
+}
